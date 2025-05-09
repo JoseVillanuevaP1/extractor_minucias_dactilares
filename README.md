@@ -1,49 +1,58 @@
-# Fingerprint-Minutiae-Extraction
+# 🧠 Extracción de Minucias en Huellas Dactilares
 
-## Summary
+## 👥 Autores
 
-This project was forked from [fingerprint_recognition](https://github.com/cuevas1208/fingerprint_recognition)
+Este proyecto fue desarrollado por:
 
-### How to run
+-   **Jose Villanueva**
+-   **Henry Torres**
 
-**Install requirements**
+Para la asignatura de **Sistemas Inteligentes**.
 
-    pip install -r requirements.txt
+---
 
-**Run fingerprint-minutiae-extraction code**
+## 📌 Resumen
 
-    python main.py
+Este proyecto implementa un sistema completo de procesamiento de imágenes de huellas dactilares. Su propósito es detectar características clave llamadas **minucias** (como bifurcaciones o terminaciones) y **singularidades** (como bucles, deltas o remolinos).
 
-### Stages of the Fingerprint-Minutiae-Extraction Algorithm
+> 🔍 El proyecto fue adaptado y modificado a partir de [fingerprint_recognition](https://github.com/cuevas1208/fingerprint_recognition), con cambios en el procesamiento, visualización y parámetros para ajustarse a nuestras necesidades académicas.
 
-The performance of minutiae extraction algorithms and other fingerprint recognition techniques relies heavily on the quality of the fingerprint images, and thus, pre-processing is a very important step.
+---
 
-The stages of pre-processing are as follows:
+## ▶️ ¿Cómo ejecutar?
 
-* Grayscale Transformation
+### 1. Instalar dependencias
 
-* Image Normalization
+```bash
+pip install -r requirements.txt
+```
 
-* Segmentation
+### 2. Ejecutar el Programa
 
-* Directional Map
+```bash
+python main.py
+```
 
-* Frequency Map
+## 🔄 Etapas del procesamiento
 
-* Gabor's Filtering
+El sistema sigue una serie de pasos para preparar, analizar y extraer información de la huella:
 
-* Skeletonization
+-   **Conversión a Escala de Grises**
+-   **Normalización de la Imagen**
+-   **Segmentación de Región de Interés (ROI)**
+-   **Cálculo de Mapa de Direcciones**
+-   **Mapa de Frecuencia de Crestas**
+-   **Filtrado con Gabor**
+-   **Esqueletización**
+-   **Detección de Minucias**
+-   **Detección de Singularidades** _(Loops, Deltas, Whorls)_
 
-* Minutiae Detection
+## 📖 Referencias
 
-* Singularity Detection
-
-### Dataset
-
-Dataset used for this project can be found [here](http://bias.csr.unibo.it/fvc2002/download.asp).
-
-### Results
-
-The output images contain result of each pre-processing step.
-
-![results](./output/0.png)
+-   [Fingerprint Recognition Algorithm , Farah Dhib Tatar](https://airccj.org/CSCP/vol7/csit76809.pdf)
+-   [Fingerprint Singular Point Detection Algorithm by Poincaré Index, Jin Bo, Tang Hua Ping, Xu Ming Lan](https://pdfs.semanticscholar.org/6e86/1d0b58bdf7e2e2bb0ecbf274cee6974fe13f.pdf)
+-   [Fingerprint Recognition: A study on image enhancement and minutiae extraction](https://pdfs.semanticscholar.org/ca0d/a7c552877e30e1c5d87dfcfb8b5972b0acd9.pdf)
+-   [Handbook of Fingerprint Recognition, Autorzy Davide Maltoni, Dario Maio, Anil K. Jain, Salil ]()
+-   [Biometrics by rtshadow](https://github.com/rtshadow/biometrics)
+-   [Fingerprint enhancement by Utkarsh-Deshmukh](https://github.com/Utkarsh-Deshmukh/Fingerprint-Enhancement-Python)
+-   [Dataset from FVC2002](http://bias.csr.unibo.it/fvc2002/download.asp)
